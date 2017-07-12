@@ -3,7 +3,8 @@ import urllib.request
 import matplotlib.pylab as pylab
 import scipy.stats as stats
 
-target_url = ("https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar/sonar.all-data")
+target_url = ("https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar"
+              "/sonar.all-data")
 data = urllib.request.urlopen(target_url)
 
 xList = []
