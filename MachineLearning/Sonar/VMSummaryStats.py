@@ -1,9 +1,7 @@
 import urllib.request
-import sys
-import numpy as np
+
 import matplotlib.pylab as pylab
 import scipy.stats as stats
-
 
 target_url = ("https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar/sonar.all-data")
 data = urllib.request.urlopen(target_url)
@@ -28,3 +26,4 @@ for row in xList:
 
 stats.probplot(coldata, dist = "norm", plot = pylab)
 pylab.show()
+
